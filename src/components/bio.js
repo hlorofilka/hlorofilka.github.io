@@ -14,7 +14,7 @@ import { rhythm } from "../utils/typography"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -29,6 +29,9 @@ const Bio = () => {
           }
           social {
             twitter
+            github
+            mail
+            linkedin
           }
         }
       }
@@ -57,11 +60,9 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <span role="img" aria-label="Hello">👋</span> Hey there! My name is Daria. I am a Python developer.
+        Looking for job as a junior / intern in Berlin or remotely.
+        You can find me on <a href={`https://linkedin.com/in/${social.linkedin}`}>LinkedIn</a>, <a href={`https://github.com/${social.github}`}>Github</a> or drop me email at <a href={`mailto:${social.mail}`}>{`${social.mail}`}</a>.
       </p>
     </div>
   )

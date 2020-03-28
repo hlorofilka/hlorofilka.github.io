@@ -1,14 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Daria Skalkina`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Daria Skalkina`,
+      summary: ``,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Daria Skalkina's personal website.`,
+    siteUrl: `https://hlorofilka.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: `hlorofilka`,
+      twitter: `dmakaron1`,
+      linkedin: `daria-skalkina`,
+      mail: `skalkinada@gmail.com`,
     },
   },
   plugins: [
