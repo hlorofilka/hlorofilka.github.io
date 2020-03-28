@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/hlorofilka.github.io",
   siteMetadata: {
     title: `Daria Skalkina`,
     author: {
